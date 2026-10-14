@@ -280,10 +280,7 @@ elif pagina == 'Proyecciones futuras':
                        data=tabla.to_csv(index=False).encode('utf-8-sig'),
                        file_name=f'pronostico_{empresa}_{metodo.replace(" ", "_")}_{horizonte}m.csv',
                        mime='text/csv')
-    st.info('Estas proyecciones son extrapolaciones estadísticas, no precios garantizados. '
-            'El RMSE del informe es de entrenamiento; evalúa pronósticos fuera de muestra '
-            'antes de elegir el modelo definitivo.')
-
+    
 
 st.divider()
 st.caption('Fuente: Yahoo Finance | Variable: cierre ajustado | Datos históricos hasta septiembre de 2026')
